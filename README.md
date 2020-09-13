@@ -34,3 +34,20 @@ Below illustrates how the encryption algorithm does :
 ### 3. The encrypted character for the input letter is calculated by taking the encrypted number, which is a value between 0 and 25, and translating it back into a letter (again, where a=0, b=1, c=2, …). In addition, all non-alphabetic characters must remain unchanged.
 
 ### 4. Capitalization of alphabetic characters will be inverted (i.e., all lowercase characters are transformed into upper case characters and vice versa).
+
+## 3. Example 
+
+Input Message = "Cat & Dog"
+α = 3
+β = 8
+Output:
+Encrypted Message = “oIN & rYA”
+
+
+Explanation:
+“C” has value 2, 2*3+8=14, 14 corresponds to “o” (lowercase since “C” is capitalized).
+“a” has value 0, 0*3+8=8, 8 corresponds to “I” (capitalized because “a” is lowercase).
+…
+“ “, “&”, and “ “ are unchanged
+...
+
